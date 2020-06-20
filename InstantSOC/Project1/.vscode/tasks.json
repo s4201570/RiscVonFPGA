@@ -1,0 +1,30 @@
+   {
+       "version": "2.0.0",
+           "tasks" : [
+       {
+           "label": "PreBuild1",
+               "type" : "shell",
+               "command" : "cd ${fileDirname}"
+       },
+       {
+           "label": "Build Instant SOC",
+           "type": "shell",
+           "command": "C:/Program Files (x86)/FPGA Cores/Instant SOC/MakeVHDL.exe",
+           "args" : [ "${file}", "C:/gcc 8_2" ],
+           "options": {
+               "cwd": "${fileDirname}"
+           },
+           "group" : {
+               "kind": "build",
+               "isDefault" : true
+           },
+           "problemMatcher" : ["$gcc"] ,
+           "presentation" : {
+               "reveal": "always",
+               "panel" : "shared",
+               "clear": true,
+               "showReuseMessage" : false
+           },
+       }
+           ]
+   }

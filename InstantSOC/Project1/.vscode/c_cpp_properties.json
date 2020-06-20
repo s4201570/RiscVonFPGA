@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "name": "",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/gcc 8_2/riscv-none-embed/include/*",
+                "C:/Program Files (x86)/FPGA Cores/Instant SOC/include/*"
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "msvc-x64"
+        }
+    ],
+    "version": 4
+}
